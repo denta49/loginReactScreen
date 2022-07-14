@@ -63,10 +63,6 @@ const Login = () => {
     dispatchEmail({ type: "INPUT_BLUR" });
   };
 
-  const validatePasswordHandler = () => {
-    dispatchPassword({ type: "INPUT_BLUR" });
-  };
-
   const submitHandler = (event) => {
     event.preventDefault();
     authCtx.onLogin(emailState.value, passwordState.value);
